@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--------- Tailwind CSS CDN --------->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--------- DaisyUi CDN --------->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!--------- font awesome CDN --------->
+  <script src="https://kit.fontawesome.com/2dfea4e8cc.js" crossorigin="anonymous"></script>
+  <!------------ google font  --------------->
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <style>
+    .font-primary{
+        font-family: "ADLaM Display", serif;
+    }
+    .font-secondary{
+        font-family: "Sora", serif;
+    }
+  </style>
+
+</head>
+<body>
+    <!------------------- header section start ------------------->
+    <section class="bg-[#FFF9F4]">
+        <header class="container mx-auto flex justify-between items-center p-5">
+            <div class="flex items-center gap-x-3">
+                <img src="./c1-assets/logo-header.png" alt="">
+                <h1 class="text-2xl font-bold font-primary">pet house</h1>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex gap-x-6">
+                    <li class="font-secondary">Find a pet</li>
+                    <li class="font-secondary">Breeds</li>
+                    <li class="font-secondary">Contact us</li>
+                </ul>
+            </div>
+            <div class="hidden lg:block">
+                <div class="flex items-center gap-x-5">
+                    <i class="text-xl fa-regular fa-bell"></i>
+                    <i class="text-xl fa-solid fa-magnifying-glass"></i>
+                    <a class="font-secondary border border-[#FFDC25] px-6 py-1 rounded-md" href="">Login</a>
+                    <a class="font-secondary bg-[#FFDC25] px-6 py-1 rounded-md" href="">Register</a>
+                </div>
+            </div>
+            <div class=" inline-block lg:hidden">
+                <i class="fa-solid fa-bars text-3xl"></i> 
+            </div>
+        </header>
+    </section>
+    <!------------------- header section end------------------->
+    <!------------------- banner section start ------------------->
+    <section class="container py-20 px-5 mx-auto bg-[url('./c1-assets/cat-big.png')]  bg-no-repeat lg:p-0">
+        <div class="lg:w-1/2 sm:w-full lg:pt-40 lg:pb-80">
+            <h1 class="text-6xl font-primary font-normal leading-[70px]">Pamper Your Pet, Because They Deserve the Bes</h1>
+            <p class="py-5 lg:text-xl font-secondary text-gray-600">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="font-secondary bg-[#FFDC25] px-6 py-2 rounded-md">Find A Pet</button>
+        </div>
+    </section>
+    <!------------------- banner section end------------------->
+</body>
+</html>
